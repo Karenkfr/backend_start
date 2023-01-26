@@ -9,14 +9,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Schema(name = "Genero", description = "Objeto de saída da entidade Genero")
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class GeneroDTO {
-	
+
 	private Long id;
 	private String descricao;
-	private LocalDateTime dataCriacao;
+	private LocalDateTime dataInclusao;
 	private LocalDateTime dataAlteracao;
 
 }
