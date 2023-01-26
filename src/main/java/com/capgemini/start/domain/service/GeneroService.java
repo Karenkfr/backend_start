@@ -39,7 +39,7 @@ public class GeneroService extends AbstractService<Genero, Long> {
 		if (this.repository.existsByDescricaoIgnoreCase(genero.getDescricao())){
 			throw new ObjectAlreadyExistsException("Já existe um genero com esta descrição.");
 		}
-		genero.setDataAlteracao(new Date());
+		genero.setDataInclusao(new Date());
 		return this.repository.save(genero);
 	}
 	
