@@ -36,7 +36,7 @@ public class LoadData {
 	@PostConstruct
 	public void carregar() {
 		carregarTipos();
-		carregaGeneros();
+		// carregaGeneros();
 	}
 
 }
